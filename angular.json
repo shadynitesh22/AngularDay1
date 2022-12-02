@@ -25,9 +25,10 @@
               "src/assets"
             ],
             "styles": [
+              "src/custom-theme.scss",
               "src/styles.css"
             ],
-            "scripts": [ "./node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"]
+            "scripts":["./node_modules/@lottiefiles/lottie-player/dist/lottie-player.js"]            
           },
           "configurations": {
             "production": {
