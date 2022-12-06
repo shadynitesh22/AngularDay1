@@ -1,7 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DashboardModule } from './dashboard/dashboard.module';
+import { LoginModule } from './login/login.module';
+import { AuthGuard } from './auth.guard';
+const routes: Routes = [
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path:'login', loadChildren: () => LoginModule ,canActivate:[AuthGuard]},
+  {path:'dashboard',loadChildren:()=>DashboardModule,canActivate:[AuthGuard]},
 
-const routes: Routes = [];
+
+
+
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

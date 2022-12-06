@@ -1,0 +1,40 @@
+
+<mat-card>
+<mat-card-header>
+    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_nc1bp7st.json"  background="transparent"  speed="1"  style="width: 150px; height: 150px;"  loop  autoplay></lottie-player>
+<mat-card-title>Login</mat-card-title>
+
+<mat-card-subtitle>Enter your credentials</mat-card-subtitle>
+</mat-card-header>
+
+<mat-card-content>
+<div [formGroup]="loginform">
+
+
+            <mat-form-field appearance="fill">
+                <mat-label>Username</mat-label>
+                <input matInput placeholder="Username" formControlName="username">
+               
+            </mat-form-field>
+
+
+
+            <mat-form-field appearance="fill">
+                <mat-label>Password</mat-label>
+                <input matInput placeholder="Password" [type]="hide ? 'password' : 'text'"  formControlName="password">
+           
+
+            </mat-form-field>
+
+        
+
+            <br>
+            <button id="login-button" (click)="login()" class="mt-2" mat-raised-button color="primary">Login</button>
+       
+        
+    </div>
+
+      
+
+</mat-card-content>
+</mat-card>

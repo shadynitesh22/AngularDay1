@@ -1,0 +1,11 @@
+mat-card{
+    width: 350px;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    height: 400px;
+
+}
+.login-button{
+    margin-top: 10px;
+}
