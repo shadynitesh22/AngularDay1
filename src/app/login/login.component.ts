@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators } from '@angular/forms';
 import { FormControl } from '@angular/forms';
 import { Router } from '@angular/router';
+import { environment } from '../environment/environment';
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -31,7 +32,7 @@ export class LoginComponent implements OnInit {
   hide = true;
   
   login(){
-    if (this.loginform.value["username"] == "admin" && this.loginform.value["password"] == "admin"){
+    if (this.loginform.value["username"] == environment.username && this.loginform.value["password"] == environment.password){
       console.log("login success");
       window.alert("Login success");
       localStorage.setItem("login_token",("xyzxyxzsdaysdasyzdasydasy1233@fasdjkdfasg"));
