@@ -1,18 +1,74 @@
-<h1 style="text-align:center;">
-    Welcome to Dashboard
+<mat-sidenav-container>
+    <mat-sidenav>
+        <mat-nav-list>
 
-</h1>
+            <mat-expansion-panel>
+                <mat-expansion-panel-header>
+
+                </mat-expansion-panel-header>
+                <mat-nav-list>
+
+                </mat-nav-list>
+            </mat-expansion-panel>
+        </mat-nav-list>
+
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <a style="float:right;" routerLink="/dashboard" mat-icon-button color="primary">
+
+            <mat-icon>home</mat-icon>
+
+        </a>
+
+
+        <button style="float:right;" mat-icon-button color="primary" (click)="logout()">
+            <mat-icon>logout</mat-icon>
+        </button>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
 <hr>
 
 
-<mat-grid-list cols="4" rowHeight="2:1">
+<mat-grid-list cols="4" rowHeight="2:1.5">
+    <!-- <------Card One Starts Here------>  
     <mat-grid-tile>
 
 
         <mat-card style="background-color:darkseagreen">
-            <mat-card-title style="background-color:black;color: white;">Orders Dispatched: 3</mat-card-title>
-            <mat-card-header>
+            <mat-card-title style="background-color:black;color: white;">
+                <mat-icon>shopping_cart
 
+                </mat-icon> Orders Dispatched: 3
+
+            </mat-card-title>
+
+            <mat-card-header>
+                <mat-grid-list cols="3">
+
+                        <!-- <------Card Header------> 
+                    <mat-grid-title>
+                        <button routerLink="order" matTooltip="Add Orders" matTooltipPosition="below" style="float:right;" mat-icon-button
+                            color="primary">
+                            <mat-icon style="color:black">queue</mat-icon>
+
+                        </button>
+                    </mat-grid-title>
+
+                    <mat-grid-title>
+                        <button routerLink="" matTooltip="Delete Order" matTooltipPosition="below" style="float:right;"
+                            mat-icon-button color="primary" (click)="logout()">
+                            <mat-icon style="color:black">delete</mat-icon>
+                        </button>
+                    </mat-grid-title>
+                    <mat-grid-title>
+                        <button matTooltip="Update Order" matTooltipPosition="below" style="float:right;"
+                            mat-icon-button color="primary" (click)="logout()">
+                            <mat-icon style="color:black">update</mat-icon>
+                        </button>
+                    </mat-grid-title>
+                </mat-grid-list>
 
             </mat-card-header>
 
@@ -21,58 +77,183 @@
                 <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_xvtpTRUupe.json"
                     background="transparent" speed="1" style="width: 300px; height: 100px;" loop autoplay>
                 </lottie-player>
+                <button matTooltip="View Orders" mat-raised-button color="accent">
+                    View Orders
+                </button>
             </mat-card-content>
 
+            
         </mat-card>
 
     </mat-grid-tile>
-    <mat-grid-tile>
+
+    <!-- <------Card One Ends Here------> 
 
 
-
-        <mat-card style="background-color:lightgreen;">
-            <mat-card-title style="background-color:black;color:white;">Total Order: 3</mat-card-title>
-            <mat-card-header>
+        <mat-grid-tile>
 
 
-            </mat-card-header>
+            <mat-card style="background-color:darkseagreen">
+                <mat-card-title style="background-color:black;color: white;">
+                    <mat-icon>shopping_cart
+    
+                    </mat-icon> Orders Dispatched: 3
+    
+                </mat-card-title>
+    
+                <mat-card-header>
+                    <mat-grid-list cols="3">
+    
+                            <!-- <------Card Header------> 
+                        <mat-grid-title>
+                            <button matTooltip="Add Orders" matTooltipPosition="below" style="float:right;" mat-icon-button
+                                color="primary" (click)="logout()">
+                                <mat-icon style="color:black">queue</mat-icon>
+    
+                            </button>
+                        </mat-grid-title>
+    
+                        <mat-grid-title>
+                            <button matTooltip="Delete Order" matTooltipPosition="below" style="float:right;"
+                                mat-icon-button color="primary" (click)="logout()">
+                                <mat-icon style="color:black">delete</mat-icon>
+                            </button>
+                        </mat-grid-title>
+                        <mat-grid-title>
+                            <button matTooltip="Update Order" matTooltipPosition="below" style="float:right;"
+                                mat-icon-button color="primary" (click)="logout()">
+                                <mat-icon style="color:black">update</mat-icon>
+                            </button>
+                        </mat-grid-title>
+                    </mat-grid-list>
+    
+                </mat-card-header>
+    
+                <mat-card-content>
+    
+                    <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_xvtpTRUupe.json"
+                        background="transparent" speed="1" style="width: 300px; height: 100px;" loop autoplay>
+                    </lottie-player>
+                    <button matTooltip="View Orders" mat-raised-button color="accent">
+                        View Orders
+                    </button>
+                </mat-card-content>
+    
+                
+            </mat-card>
+    
+        </mat-grid-tile>
+    
+        <!-- <------Card One Ends Here------> 
+            <mat-grid-tile>
 
-            <mat-card-content>
 
-                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_xvtpTRUupe.json"
-                    background="transparent" speed="1" style="width: 300px; height: 100px;" loop autoplay>
-                </lottie-player>
-            </mat-card-content>
+                <mat-card style="background-color:darkseagreen">
+                    <mat-card-title style="background-color:black;color: white;">
+                        <mat-icon>shopping_cart
+        
+                        </mat-icon> Orders Dispatched: 3
+        
+                    </mat-card-title>
+        
+                    <mat-card-header>
+                        <mat-grid-list cols="3">
+        
+                                <!-- <------Card Header------> 
+                            <mat-grid-title>
+                                <button matTooltip="Add Orders" matTooltipPosition="below" style="float:right;" mat-icon-button
+                                    color="primary" (click)="logout()">
+                                    <mat-icon style="color:black">queue</mat-icon>
+        
+                                </button>
+                            </mat-grid-title>
+        
+                            <mat-grid-title>
+                                <button matTooltip="Delete Order" matTooltipPosition="below" style="float:right;"
+                                    mat-icon-button color="primary" (click)="logout()">
+                                    <mat-icon style="color:black">delete</mat-icon>
+                                </button>
+                            </mat-grid-title>
+                            <mat-grid-title>
+                                <button matTooltip="Update Order" matTooltipPosition="below" style="float:right;"
+                                    mat-icon-button color="primary" (click)="logout()">
+                                    <mat-icon style="color:black">update</mat-icon>
+                                </button>
+                            </mat-grid-title>
+                        </mat-grid-list>
+        
+                    </mat-card-header>
+        
+                    <mat-card-content>
+        
+                        <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_xvtpTRUupe.json"
+                            background="transparent" speed="1" style="width: 300px; height: 100px;" loop autoplay>
+                        </lottie-player>
+                        <button matTooltip="View Orders" mat-raised-button color="accent">
+                            View Orders
+                        </button>
+                    </mat-card-content>
+        
+                    
+                </mat-card>
+        
+            </mat-grid-tile>
+        
+            <!-- <------Card One Ends Here------> 
+                <mat-grid-tile>
 
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
 
-        <mat-card style="background-color:dodgerblue;">
-            <mat-card-title style="background-color:black;color: white;">Total User: 3</mat-card-title>
-            <mat-card-header>
-
-
-            </mat-card-header>
-
-            <mat-card-content>
-
-                <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_xvtpTRUupe.json"
-                    background="transparent" speed="1" style="width: 300px; height: 100px;" loop autoplay>
-                </lottie-player>
-            </mat-card-content>
-
-        </mat-card>
-    </mat-grid-tile>
-    <mat-grid-tile>
-
-
-
-
-        <mat-card>
-
-            <button mat-raised-button color="primary" (click)="logout()">Logout</button>
-
-        </mat-card>
-    </mat-grid-tile>
+                    <mat-card style="background-color:darkseagreen">
+                        <mat-card-title style="background-color:black;color: white;">
+                            <mat-icon>shopping_cart
+            
+                            </mat-icon> Orders Dispatched: 3
+            
+                        </mat-card-title>
+            
+                        <mat-card-header>
+                            <mat-grid-list cols="3">
+            
+                                    <!-- <------Card Header------> 
+                                <mat-grid-title>
+                                    <button matTooltip="Add Orders" matTooltipPosition="below" style="float:right;" mat-icon-button
+                                        color="primary" (click)="logout()">
+                                        <mat-icon style="color:black">queue</mat-icon>
+            
+                                    </button>
+                                </mat-grid-title>
+            
+                                <mat-grid-title>
+                                    <button matTooltip="Delete Order" matTooltipPosition="below" style="float:right;"
+                                        mat-icon-button color="primary" (click)="logout()">
+                                        <mat-icon style="color:black">delete</mat-icon>
+                                    </button>
+                                </mat-grid-title>
+                                <mat-grid-title>
+                                    <button matTooltip="Update Order" matTooltipPosition="below" style="float:right;"
+                                        mat-icon-button color="primary" (click)="logout()">
+                                        <mat-icon style="color:black">update</mat-icon>
+                                    </button>
+                                </mat-grid-title>
+                            </mat-grid-list>
+            
+                        </mat-card-header>
+            
+                        <mat-card-content>
+            
+                            <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_xvtpTRUupe.json"
+                                background="transparent" speed="1" style="width: 300px; height: 100px;" loop autoplay>
+                            </lottie-player>
+                            <button matTooltip="View Orders" mat-raised-button color="accent">
+                                View Orders
+                            </button>
+                        </mat-card-content>
+            
+                        
+                    </mat-card>
+            
+                </mat-grid-tile>
+            
+                <!-- <------Card One Ends Here------> 
 </mat-grid-list>
+

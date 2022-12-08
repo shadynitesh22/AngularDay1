@@ -8,6 +8,7 @@ import {MatInputModule} from '@angular/material/input';
 import { RouterModule, Routes } from '@angular/router';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 const routes : Routes = [{path:"",component:LoginComponent}]
 
@@ -24,7 +25,8 @@ const routes : Routes = [{path:"",component:LoginComponent}]
     MatButtonModule,
     MatInputModule,
     MatCardModule,
-    MatIconModule
+    MatIconModule,
+    MatSnackBarModule
     
   ],
   

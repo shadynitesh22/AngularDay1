@@ -5,8 +5,8 @@ import { LoginModule } from './login/login.module';
 import { AuthGuard } from './auth.guard';
 const routes: Routes = [
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-  { path:'login', loadChildren: () => LoginModule },
-  {path:'dashboard',loadChildren:()=>DashboardModule,canActivate:[AuthGuard]},
+  { path: 'login', loadChildren: () => LoginModule },
+  { path: 'dashboard', loadChildren: () => DashboardModule, canActivate: [AuthGuard] },
 
 
 

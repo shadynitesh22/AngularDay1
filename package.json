@@ -21,10 +21,15 @@
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
     "@lottiefiles/lottie-player": "^1.6.1",
+    "@types/filesaver": "0.0.30",
     "dotenv": "^16.0.3",
+    "file-saver": "^2.0.5",
+    "filesaver": "0.0.13",
+    "ngx-csv-parser": "^1.2.0",
     "rxjs": "~7.5.0",
     "save--": "github:lottiefiles/lottie-player",
     "tslib": "^2.3.0",
+    "xlsx": "^0.18.5",
     "zone.js": "~0.12.0"
   },
   "devDependencies": {
